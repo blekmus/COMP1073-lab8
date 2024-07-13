@@ -7,9 +7,11 @@ const burgerIngredients = {
   toppings: ["crispy bacon", "fried egg", "avocado"]
 };
 
+// Get the elements
 const burgerDescription = document.getElementById('burgerDescription');
 const orderButton = document.getElementById('orderButton');
 
+// Define the Burger constructor
 function Burger(bun, veggie, cheese, sauce, patty, topping) {
   this.bun = bun;
   this.veggie = veggie;
@@ -23,11 +25,13 @@ function Burger(bun, veggie, cheese, sauce, patty, topping) {
   }
 }
 
+// Define helper functions
 function getRandomIngredient(category) {
   const ingredients = burgerIngredients[category];
   return ingredients[Math.floor(Math.random() * ingredients.length)];
 }
 
+// Define event listener
 function createRandomBurger() {
   return new Burger(
     getRandomIngredient('buns'),
@@ -39,11 +43,13 @@ function createRandomBurger() {
   );
 }
 
+// Define event listener
 function updateBurgerDescription() {
   const burger = createRandomBurger();
   burgerDescription.innerHTML = burger.describe();
 }
 
+// Add event listener
 orderButton.addEventListener('click', updateBurgerDescription);
 
 // Initialize with a default message

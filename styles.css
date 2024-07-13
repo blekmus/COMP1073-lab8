@@ -8,6 +8,7 @@ body {
     margin: 0;
 }
 
+/* main container styles */
 .container {
     background-color: white;
     padding: 2rem;
@@ -33,6 +34,8 @@ h1 {
     background-color: #f9f9f9;
 }
 
+
+/* topping styles */
 .topping1 {
     color: #ff5252;
 }
