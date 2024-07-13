@@ -1,0 +1,80 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.burderDescriptionCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    min-height: 60px;
+    background-color: #f9f9f9;
+}
+
+.topping1 {
+    color: #ff5252;
+}
+
+.topping2 {
+    color: #2dc947;
+}
+
+.topping3 {
+    color: #8793ff;
+}
+
+.topping4 {
+    color: #ff9f2d;
+}
+
+.topping5 {
+    color: #b86bff;
+}
+
+.topping6 {
+    color: #d4ca1a;
+}
+
+
+
+#orderButton {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#orderButton:hover {
+    background-color: #ff5252;
+}
+
+img {
+    max-width: 200px;
+    margin-bottom: 30px;
+}
